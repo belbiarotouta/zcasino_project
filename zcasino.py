@@ -1,7 +1,7 @@
-import random
+from random import randint
 from math import ceil
 
-bille = random.randint(0, 49)
+bille = randint(0, 49)
 somme_mise = int(input("Saisissez le montant à miser: "))
 gain = 0
 numero_choisi = int(input("Montrer votre numéro: "))
