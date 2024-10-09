@@ -53,9 +53,9 @@ while continuer_partie:  # Tant qu'on doit continuer la partie.
     else:
         # On affiche l'argent du joueur
         print(f"Vous avez à présent {argent} euro(s).")
-        match input("Souhaitez-vous quitter le casino (o/n) ? "):
+        match input("Souhaitez-vous quitter le casino (o/n) ? ").lower():
             # l'utilisateur entre 'o' ou '0'
-            case "0" | "o":
+            case "o":
                 print("Vous quittez le casino avec vos gains.")
                 continuer_partie = False
 
